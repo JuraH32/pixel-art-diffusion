@@ -9,7 +9,7 @@ from dataloader import get_dataloader
 from model import ScalableUNet, PixelDiffusion
 
 def train(args):
-    device = "cuda" if torch.cuda.is_available() else "cpu"
+    device = "cuda" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu"
     os.makedirs(args.checkpoint_dir, exist_ok=True)
     writer = SummaryWriter(log_dir=args.log_dir)
 

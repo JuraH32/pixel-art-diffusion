@@ -5,3 +5,5 @@ tensorboard
 PILLOW
 pandas
 matplotlib
+numpy
+kaggle

@@ -85,7 +85,9 @@ class PixelArtDataset(Dataset):
             if files:
                 csv_path = os.path.join(root_dir, files[0])
             else:
-                raise FileNotFoundError(f"No labels.csv or sprites.npy found in {root_dir}")
+                raise FileNotFoundError(f"No labels.csv or sprites.npy found in {root_dir}"
+                                       f"Run 'python setup_data.py' to download the dataset."
+                )
         
         print(f"Loading labels from: {csv_path}")
         self.df = pd.read_csv(csv_path)
