@@ -66,7 +66,7 @@ tensorboard --logdir ./runs --port 6006
 Open http://localhost:6006 in your browser.
 
 ### Generation
-
+You can download a trained checkpoint [here](https://drive.google.com/file/d/1YmUL46Blio4IkZnQs14Xj4EhdYTguAS8/view?usp=sharing). 
 After training, use the notebook `visualize_data.ipynb` to generate samples, or:
 
 ```python
